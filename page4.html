@@ -9,108 +9,40 @@
 
     
 
-    <style>
-    body{
-        background-image: url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/f578b9d4-3fe9-490a-a9ca-969578cf06bb/O.B.+Montessori+Center+Program+-+Grade+School+Primary);
-        background-size: cover;
-        background-repeat: no-repeat;
-    } 
-
-        .form-container {
-          margin: 0 auto;
-            background-color: rgba(227, 226, 226, 0.6);
-            padding: 35px;
-            border-radius: 5px;
-            width: 1200px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
-            backdrop-filter: blur(10px);
-            
-
+   <style>
+        body {
+            background-image: url('file:///C:/Users/KC/Downloads/Untitled%20design.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
         }
 
-        h1 {
+        .form-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .header-logo {
+            width: 90px;
+        }
+
+        .footer {
             text-align: center;
-            color: #363636;
-        }
-
-        p {
             font-size: 14px;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #313131;
+            margin-top: 20px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
         }
-
-        label {
-            font-weight: light;
-            display: block;
-            margin-top: 10px;
-            color: #242424;
-        }
-
-        input[type="text"], input[type="email"], textarea, select {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #d4d4d4;
-            border-radius: 5px;
-        }
-
-        textarea {
-            resize: none;
-        }
-
-        .checkbox-group, .radio-group {
-            margin-top: 5px;
-        }
-
-        input[type="checkbox"], input[type="radio"] {
-            margin-right: 5px;
-        }
-
-        button {
-            width: 100%;
-            margin-top: 15px;
-            padding: 10px;
-            background: #007bff;
-            border: none;
-            border-radius: 5px;
-            color: rgb(255, 255, 255);
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #0056b3;
-        }
-
-        img {
-            display: block;
-            margin: 0 auto 15px;
-            width: 80px;
-        }
-
-        a {
-            display: block;
-            text-align: center;
-            margin-top: 15px;
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        input[type="submit"] {
-            font-size: 20px;
-            background-color: blueviolet;
-        }
-    </style>
     </style>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     
     <a class="navbar-brand" href=""><img src="https://storage.googleapis.com/oa_disk001/obgreenhills/65/school_logo/1691567065-3230.jpg" width="67px" alt="" class=""></a>
@@ -142,72 +74,86 @@
   </div>
 </nav>
 
-<br><br>
 
-<div class="container text-light">
-    <p class="fw-bold display-4">OBMC Student Enrollment Form</Em></p>
-    <br>
-    
-<div class="form-container">
-        <h1>Student Information</h1>
+  <div class="container">
+    <div class="text-center mt-4">
+        <h1 class="fw-bold mt-2">OBMC Student Enrollment Form</h1>
+        <p class="text-secondary fw-semibold">Fill out the form below to enroll for the upcoming school year</p>
+    </div>
+
+    <div class="form-box shadow">
+
         
+        <h3 class="fw-bold mb-3">Student Information</h3>
 
-        <form>
-            
-            <label for="name">First Name</label>
-            <input type="text" id="name" placeholder="Ren" required>
-
-            <label for="name">Last Name</label>
-            <input type="text" id="name" placeholder="Amamiya" required>
-
-            <label for="name">Birth Date</label>
-            <input type="text" id="birth" placeholder="dd/mm/yyyy" required>
-
-             <label>Gender</label>
-            <select>
-                <option> Select... </option>
-                <option>Female</option>
-                <option>Male</option>
-            </select>
-
-             <label>Grade Level</label>
-            <select>
-                <option> Select.. </option>
-                <option>Casa</option>
-                <option>Intermediate</option>
-                <option>Junior High School</option>
-                <option>Senior High School</option>
-            </select>
-
-
-
-             <h1>Contact Details</h1>
-
-            <label for="email">Your Email</label>
-            <input type="email" id="email" placeholder="student@example.com" required>
-
-            
-            <label for="number">Contact Number</label>
-            <input type="text" id="number" placeholder="0912-345-6789" required>
-
-      
-
-             <label>Other Information</label>
-            <div class="radio-group">
-                <input type="radio" name="rating"> Online
-                <input type="radio" name="rating"> Face-to-Face
-                <input type="radio" name="rating"> I confirm that the information provided is true and complete.
+        <div class="row mb-3">
+            <div class="col">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" placeholder="Ren">
             </div>
+            <div class="col">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" placeholder="Amamiya">
+            </div>
+        </div>
 
-            
-            <button type="submit">Submit</button>
-        </form>
+        <div class="row mb-3">
+            <div class="col">
+                <label class="form-label">Birth Date</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="col">
+                <label class="form-label">Gender</label>
+                <select class="form-control">
+                    <option>Select...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="col">
+                <label class="form-label">Grade Level</label>
+                <select class="form-control">
+                    <option>Select...</option>
+                    <option>Grade 7</option>
+                    <option>Grade 8</option>
+                    <option>Grade 9</option>
+                </select>
+            </div>
+        </div>
 
-      
+        
+        <h3 class="fw-bold mt-4 mb-3">Contact Details</h3>
+
+        <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="student@example.com">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Contact Number</label>
+            <input type="text" class="form-control" placeholder="(0912) 345-6789">
+        </div>
+
+       
+        <h3 class="fw-bold mt-4 mb-3">Other Information</h3>
+
+        <label class="form-label">Mode of Learning</label>
+        <div class="mb-3">
+            <input type="radio" name="mode"> Online <br>
+            <input type="radio" name="mode"> Face-to-Face
+        </div>
+
+        <div class="mb-4">
+            <input type="checkbox"> I confirm that the information provided is true and complete.
+        </div>
+
+        <button class="btn btn-primary w-100">Submit Enrollment</button>
     </div>
 
     <div class="footer">
-    <p>© 2025 OBMC Student Enrollment Kirsten Caagbay 9R. </p>
-  </div>
+        © 2025 Caagbay Enrollment System | ICT 9 Ruby
+    </div>
+</div>
+
 </body>
 </html>
